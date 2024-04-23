@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE suite SYSTEM "C:\Users\visha\Downloads/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="SubmitOrder">
+	<listeners>
+		<listener class-name="rahulShettyAcademy.TestComponent.Listeners">
+			
+		</listener>
+	</listeners>
+  <test thread-count="5" name="Test">
     <classes>
       <class name="rahulShettyAcademy.Tests.SubmitOrderTest"/>
     </classes>
-  </test> <!-- SubmitOrder -->
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

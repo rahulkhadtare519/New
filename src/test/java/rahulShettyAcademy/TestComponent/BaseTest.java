@@ -49,9 +49,9 @@ public class BaseTest
 	{
 		TakesScreenshot ts= (TakesScreenshot)driver;
 		File source= ts.getScreenshotAs(OutputType.FILE);
-		File file= new File(System.getProperty("user.dir")+"//reports"+ testCaseName + ".png");
+		File file= new File(System.getProperty("user.dir")+"/reports/"+ testCaseName + ".png");
 		FileUtils.copyFile(source,file);   //FileUtils package is derived once 'Apache Commons IO' jar is added into dependency
-		return System.getProperty("user.dir")+"//reports"+ testCaseName + ".png";  //this is just a path hence return type is 'String'
+		return System.getProperty("user.dir")+"/reports/"+ testCaseName + ".png";  //this is just a path hence return type is 'String'
 	}
 	
 	@BeforeMethod(alwaysRun = true)   
