@@ -34,7 +34,7 @@ public class SubmitOrderTest extends BaseTest{
         cartPage.goToCart();
         Boolean match= cartPage.verifyProductDisplay(productName);
         Assert.assertTrue(match);
-        driver.close();
+        driver.quit();
 
 	}
 
